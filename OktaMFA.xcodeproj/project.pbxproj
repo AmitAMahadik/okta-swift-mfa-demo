@@ -6,14 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BC594EB12E5D4CC7007F3B5A /* BrowserSignin in Frameworks */ = {isa = PBXBuildFile; productRef = BC594EB02E5D4CC7007F3B5A /* BrowserSignin */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BC594EA12E5D4C19007F3B5A /* Okta MFA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Okta MFA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BC594EA32E5D4C19007F3B5A /* Okta MFA */ = {
+		BC594EA32E5D4C19007F3B5A /* OktaMFA */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Okta MFA";
+			path = OktaMFA;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC594EB12E5D4CC7007F3B5A /* BrowserSignin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +37,7 @@
 		BC594E982E5D4C19007F3B5A = {
 			isa = PBXGroup;
 			children = (
-				BC594EA32E5D4C19007F3B5A /* Okta MFA */,
+				BC594EA32E5D4C19007F3B5A /* OktaMFA */,
 				BC594EA22E5D4C19007F3B5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,10 +66,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BC594EA32E5D4C19007F3B5A /* Okta MFA */,
+				BC594EA32E5D4C19007F3B5A /* OktaMFA */,
 			);
 			name = "Okta MFA";
 			packageProductDependencies = (
+				BC594EB02E5D4CC7007F3B5A /* BrowserSignin */,
 			);
 			productName = "Okta MFA";
 			productReference = BC594EA12E5D4C19007F3B5A /* Okta MFA.app */;
@@ -85,7 +91,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BC594E9C2E5D4C19007F3B5A /* Build configuration list for PBXProject "Okta MFA" */;
+			buildConfigurationList = BC594E9C2E5D4C19007F3B5A /* Build configuration list for PBXProject "OktaMFA" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,6 +100,9 @@
 			);
 			mainGroup = BC594E982E5D4C19007F3B5A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BC594EAF2E5D4CC7007F3B5A /* XCRemoteSwiftPackageReference "okta-mobile-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BC594EA22E5D4C19007F3B5A /* Products */;
 			projectDirPath = "";
@@ -305,7 +314,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC594E9C2E5D4C19007F3B5A /* Build configuration list for PBXProject "Okta MFA" */ = {
+		BC594E9C2E5D4C19007F3B5A /* Build configuration list for PBXProject "OktaMFA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC594EAA2E5D4C1A007F3B5A /* Debug */,
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC594EAF2E5D4CC7007F3B5A /* XCRemoteSwiftPackageReference "okta-mobile-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/okta/okta-mobile-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC594EB02E5D4CC7007F3B5A /* BrowserSignin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC594EAF2E5D4CC7007F3B5A /* XCRemoteSwiftPackageReference "okta-mobile-swift" */;
+			productName = BrowserSignin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC594E992E5D4C19007F3B5A /* Project object */;
 }

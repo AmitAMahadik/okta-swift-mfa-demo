@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Okta.plist
+   Okta MFA
+
+   Created by Mahadik, Amit on 8/25/25.
+   Copyright (c) 2025 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>scopes</key>
+    <string>openid profile offline_access</string>
+    <key>redirectUri</key>
+    <string>com.okta.integrator-6918617:/callback</string>
+    <key>clientId</key>
+    <string>0oautqwm50rcWX3My697</string>
+    <key>issuer</key>
+    <string>https://integrator-6918617.okta.com/oauth2/default</string>
+    <key>logoutRedirectUri</key>
+    <string>com.okta.integrator-6918617:/</string>
+</dict>
+</plist>
